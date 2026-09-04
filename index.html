@@ -3,199 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Tre Rivoluzioni</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3.0">
+    <meta name="description" content="Una mappa interattiva delle tre rivoluzioni che hanno ridisegnato il mondo moderno.">
+    <title>Le Tre Rivoluzioni | Archivio storico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=4.0">
 </head>
 <body>
-    <div class="triangle-animation triangle-animation-left" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="triangle-animation triangle-animation-right" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <header class="hero-section text-center py-5 position-relative">
-        <div class="container-fluid px-4">
-            <div class="animus-status mb-2">
-            </div>
-            <h1 class="animus-title display-1 fw-bold text-uppercase">Le Tre Rivoluzioni</h1>
-            <p class="animus-subtitle text-danger fw-bold display-6">I cambiamenti che hanno trasformato il mondo </p>
-            <div class="animus-divider"></div>
-        </div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Torna all'inizio"><span class="brand-mark">03</span><span>Archivio<br>Rivoluzioni</span></a>
+        <div class="header-meta"><span class="live-dot"></span> Sessione di studio <span class="header-year">/ 1642 — 1840</span></div>
+        <a class="jump-link" href="#mappa">Esplora la mappa <span>↓</span></a>
     </header>
-
-    <main class="container-fluid px-md-5 my-5 position-relative z-1">
-        <div class="row g-4 align-items-stretch">
-
-            <div class="col-lg-4 col-md-12 d-flex">
-                <div class="card animus-card w-100 border-secondary">
-                    <div class="card-header border-danger bg-transparent d-flex justify-content-between align-items-center py-3">
-                        <small class="text-danger tracking-wider fw-bold">SEQUENZA 01</small>
-                        <span class="badge bg-outline-danger">1760 - 1840</span>
-                    </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <h2 class="card-title text-danger mb-3">1. Rivoluzione Industriale</h2>
-                            <p class="card-text">Inghilterra. Il vapore sostituisce la forza muscolare. La meccanizzazione ridisegna l'economia mondiale, la struttura sociale e l'urbanizzazione.</p>
-                        </div>
-                        <button class="btn btn-outline-danger mt-4 animus-btn" data-bs-toggle="modal" data-bs-target="#modalIndustriale">
-                            💻 Accedi alla Memoria
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 d-flex">
-                <div class="card animus-card w-100 border-secondary">
-                    <div class="card-header border-danger bg-transparent d-flex justify-content-between align-items-center py-3">
-                        <small class="text-danger tracking-wider fw-bold">SEQUENZA 02</small>
-                        <span class="badge bg-outline-danger">1642 - 1689</span>
-                    </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <h2 class="card-title text-danger mb-3">2. Rivoluzione Inglese</h2>
-                            <p class="card-text">Londra. Re contro Parlamento. Dalla sanguinosa Guerra Civile e il regicidio di Carlo I fino alla "Gloriosa Rivoluzione" e la nascita della monarchia parlamentare.</p>
-                        </div>
-                        <button class="btn btn-outline-danger mt-4 animus-btn" data-bs-toggle="modal" data-bs-target="#modalInglese">
-                            💻 Accedi alla Memoria
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 d-flex">
-                <div class="card animus-card w-100 border-secondary">
-                    <div class="card-header border-danger bg-transparent d-flex justify-content-between align-items-center py-3">
-                        <small class="text-danger tracking-wider fw-bold">SEQUENZA 03</small>
-                        <span class="badge bg-outline-danger">1765 - 1783</span>
-                    </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <h2 class="card-title text-danger mb-3">3. Rivoluzione Americana</h2>
-                            <p class="card-text">Tredici Colonie. La ribellione al dominio britannico: dal Boston Tea Party alla Dichiarazione d'Indipendenza e la fondazione della democrazia moderna.</p>
-                        </div>
-                        <button class="btn btn-outline-danger mt-4 animus-btn" data-bs-toggle="modal" data-bs-target="#modalAmericana">
-                            💻 Accedi alla Memoria
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <img class="archive-image mt-6" src="Assassin's Creed.jpg" alt="Assassin's Creed">
-        </div>
+    <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-copy"><p class="eyebrow">Una storia in tre atti <span>—</span> 01 / 03</p><h1 id="page-title">Le tre<br><em>rivoluzioni</em></h1><p class="hero-intro">Tre fratture nella storia. Un mondo nuovo che prende forma tra fabbriche, parlamenti e colonie in rivolta.</p><a class="text-link" href="#mappa">Inizia il percorso <span>↘</span></a></div>
+            <div class="hero-art"><div class="hero-art-label">FIG. 01 <span>—</span> THE TURNING POINT</div><img src="Assassin's Creed.jpg" alt="Scena storica dall'archivio delle rivoluzioni"><div class="hero-caption"><span>Una nuova era</span><strong>Il passato<br>accende il futuro.</strong></div></div>
+        </section>
+        <section class="fact-strip" aria-label="Dati dell'archivio"><div><strong>03</strong><span>Rivoluzioni</span></div><div><strong>98</strong><span>Anni di svolta</span></div><div><strong>∞</strong><span>Idee ancora vive</span></div><p>Un atlante essenziale per capire<br>come nasce la modernità.</p></section>
+        <section class="map-section" id="mappa" aria-labelledby="map-title">
+            <div class="section-heading"><div><p class="eyebrow">Indice cronologico</p><h2 id="map-title">La mappa<br><em>del cambiamento</em></h2></div><div class="controls"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Cerca nell'archivio..." aria-label="Cerca una rivoluzione"></label><div class="filters" role="group" aria-label="Filtra per periodo"><button class="filter active" data-filter="all">Tutte</button><button class="filter" data-filter="1700">XVIII secolo</button><button class="filter" data-filter="1600">XVII secolo</button></div></div></div>
+            <div class="timeline" id="timeline">
+                <article class="revolution-card" data-period="1600" data-search="inglese londra parlamento cromwell monarchia"><div class="card-index">01</div><div class="card-image"><img src="Assassin's Creed Unity.jpg" alt="Londra nel periodo della rivoluzione inglese"><span>1642 — 1689</span></div><div class="card-content"><p class="card-kicker">Londra · Potere</p><h3>Rivoluzione<br><em>Inglese</em></h3><p>Re contro Parlamento: la guerra civile e la Gloriosa Rivoluzione aprono la strada alla monarchia parlamentare.</p><button class="archive-button" data-modal="modalInglese">Apri la memoria <span>↗</span></button></div></article>
+                <article class="revolution-card" data-period="1700" data-search="americana colonie indipendenza jefferson washington democrazia"><div class="card-index">02</div><div class="card-image"><img src="Assassin's Creed 3.jpg" alt="Le colonie americane nell'archivio visivo"><span>1765 — 1783</span></div><div class="card-content"><p class="card-kicker">Tredici Colonie · Diritti</p><h3>Rivoluzione<br><em>Americana</em></h3><p>Una ribellione fiscale diventa una dichiarazione universale di diritti e l'idea di una nuova democrazia.</p><button class="archive-button" data-modal="modalAmericana">Apri la memoria <span>↗</span></button></div></article>
+                <article class="revolution-card" data-period="1700" data-search="industriale inghilterra vapore economia urbanizzazione"><div class="card-index">03</div><div class="card-image"><img src="Assassin's Creed Syndicate.jpg" alt="Londra industriale nell'archivio visivo"><span>1760 — 1840</span></div><div class="card-content"><p class="card-kicker">Inghilterra · Tecnologia</p><h3>Rivoluzione<br><em>Industriale</em></h3><p>Il vapore sostituisce la forza muscolare. La macchina ridisegna l'economia, la società e le città.</p><button class="archive-button" data-modal="modalIndustriale">Apri la memoria <span>↗</span></button></div></article>
+            </div><p class="empty-state" hidden>Nessun documento corrisponde alla ricerca.</p>
+        </section>
     </main>
-
-    <div class="modal fade animus-modal" id="modalIndustriale" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered">
-            <div class="modal-content border-danger">
-                <div class="modal-header border-bottom border-danger p-4">
-                    <h3 class="modal-title text-danger">🏭 Archivio Storico: Prima Rivoluzione Industriale</h3>
-                    <button type="button" class="btn-close btn-close-white p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="text-uppercase border-bottom border-secondary pb-3 mb-4">Contesto e Sviluppo Storico</h4>
-                            <p>La Prima Rivoluzione Industriale si sviluppò in Gran Bretagna tra il 1760 e il 1840. Rappresentò una transizione irreversibile da un'economia agricolo-artigianale a un sistema industriale moderno fondato sulle macchine e sul sistema di fabbrica.</p>
-                            
-                            <h5 class="text-danger mt-5 mb-3">⚡ Innovazioni Tecnologiche e Settori Chiave:</h5>
-                            <ul class="list-unstyled ps-3 border-start border-danger border-3">
-                                <li class="mb-3"><strong>Macchina a Vapore (1769):</strong> Perfezionata da James Watt, rese possibile la conversione dell'energia termica del carbone in energia meccanica.</li>
-                                <li class="mb-3"><strong>Settore Tessile:</strong> L'introduzione della spoletta volante di John Kay e del telaio meccanico permise la produzione di massa dei tessuti di cotone.</li>
-                                <li class="mb-3"><strong>Metallurgia ed Estrazione:</strong> L'uso del carbon coke negli altiforni rivoluzionò la produzione di ghisa e acciaio.</li>
-                                <li class="mb-3"><strong>Rivoluzione dei Trasporti:</strong> Sviluppo della rete ferroviaria (con la locomotiva Rocket di Stephenson) e dei canali navigabili.</li>
-                            </ul>
-
-                            <h5 class="text-danger mt-5 mb-3">👥 Mutamenti Sociali ed Economici:</h5>
-                            <p>L'industrializzazione provocò un massiccio fenomeno di urbanizzazione (es. la rapida crescita di Manchester e Birmingham). Nacquero due nuove classi antagoniste: la <em>borghesia industriale</em> e il <em>proletariato urbano</em>. Le disumane condizioni di lavoro (turni fino a 16 ore, sfruttamento minorile) portarono alla nascita del movimento luddista e delle prime organizzazioni sindacali (Trade Unions).</p>
-                            <img class="archive-image mt-4" src="Assassin's Creed Syndicate.jpg" alt="Assassin's Creed Syndicate">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade animus-modal" id="modalInglese" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered">
-            <div class="modal-content border-danger">
-                <div class="modal-header border-bottom border-danger p-4">
-                    <h3 class="modal-title text-danger">👑 Archivio Storico: La Rivoluzione Inglese</h3>
-                    <button type="button" class="btn-close btn-close-white p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="text-uppercase border-bottom border-secondary pb-3 mb-4">Guerra Civile e Gloriosa Rivoluzione</h4>
-                            <p>Nel corso del XVII secolo, l'Inghilterra fu sconvolta da due momenti di profonda crisi istituzionale che contrapposero la monarchia assoluta degli Stuart alle rivendicazioni di autonomia del Parlamento e dei movimenti puritani.</p>
-                            
-                            <h5 class="text-danger mt-5 mb-3">⚔️ Fasi del Conflitto:</h5>
-                            <ul class="list-unstyled ps-3 border-start border-danger border-3">
-                                <li class="mb-3"><strong>Prima Guerra Civile (1642-1646):</strong> Scoppiata dopo il tentativo di Carlo I di arrestare i parlamentari oppositori. Lo scontro armato vide fronteggiarsi i Realisti ("Cavalieri") e i Parlamentaristi ("Teste Rotonde").</li>
-                                <li class="mb-3"><strong>Il New Model Army e il Regicidio:</strong> Oliver Cromwell organizzò un esercito rivoluzionario che sconfisse il Re a Naseby (1645). Nel 1649 Carlo I venne processato e giustiziato; fu proclamata la Repubblica (Commonwealth).</li>
-                                <li class="mb-3"><strong>La Dittatura di Cromwell:</strong> Trasformatasi in un regime autoritario (Protectorat), alla morte di Cromwell il potere tornò temporaneamente agli Stuart con Carlo II.</li>
-                                <li class="mb-3"><strong>La Gloriosa Rivoluzione (1688-1689):</strong> Di fronte alle tendenze assolutiste di Giacomo II, il Parlamento offrì la corona al protestante Guglielmo III d'Orange. La transizione avvenne senza spargimento di sangue in Inghilterra.</li>
-                            </ul>
-
-                            <h5 class="text-danger mt-5 mb-3">📜 Nascita della Monarchia Costituzionale:</h5>
-                            <p>Con la firma del <em>Bill of Rights</em> (Dichiarazione dei Diritti, 1689), il sovrano accettò precisi limiti al proprio potere esecutivo, garantendo la libertà di parola nel Parlamento e ponendo le basi del sistema costituzionale e parlamentare moderno.</p>
-                            <img class="archive-image mt-4" src="Assassin's Creed Unity.jpg" alt="Assassin's Creed Unity">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade animus-modal" id="modalAmericana" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered">
-            <div class="modal-content border-danger">
-                <div class="modal-header border-bottom border-danger p-4">
-                    <h3 class="modal-title text-danger">🏛️ Archivio Storico: La Rivoluzione Americana</h3>
-                    <button type="button" class="btn-close btn-close-white p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="text-uppercase border-bottom border-secondary pb-3 mb-4">La Crisi Coloniale e la Guerra d'Indipendenza</h4>
-                            <p>La Rivoluzione Americana si svolse tra il 1765 e il 1783 nelle Tredici Colonie britanniche del Nord America. Il rifiuto dell'imposizione fiscale da parte della madrepatria senza rappresentanza parlamentare accese il conflitto politico e militare.</p>
-                            
-                            <h5 class="text-danger mt-5 mb-3">🔥 Cronologia degli Eventi Strategici:</h5>
-                            <ul class="list-unstyled ps-3 border-start border-danger border-3">
-                                <li class="mb-3"><strong>Casus Belli e Proteste (1765-1773):</strong> Insofferenza verso leggi come lo <em>Stamp Act</em> e il <em>Tea Act</em>, culmine nel celebre <em>Boston Tea Party</em> (1773) con il rovesciamento del carico di tè britannico nel porto.</li>
-                                <li class="mb-3"><strong>Dichiarazione d'Indipendenza (4 Luglio 1776):</strong> Approvata al Congresso di Filadelfia e redatta da Thomas Jefferson, sancì la nascita degli Stati Uniti d'America proclamando i diritti inalienabili dell'uomo.</li>
-                                <li class="mb-3"><strong>Campagne Militari (1775-1781):</strong> Sotto la guida del generale George Washington, l'Esercito Continentale affrontò le truppe inglesi, ottenendo vittorie chiave a Saratoga (1777) e Yorktown (1781), grazie anche all'intervento decisivo della Francia e della Spagna.</li>
-                                <li class="mb-3"><strong>Trattato di Parigi (1783):</strong> La Gran Bretagna riconobbe ufficialmente la sovranità e l'indipendenza delle Tredici Colonie.</li>
-                            </ul>
-
-                            <h5 class="text-danger mt-5 mb-3">⚖️ La Costituzione del 1787:</h5>
-                            <p>Con la Convenzione di Filadelfia del 1787 nacque la prima Repubblica federale presidenziale della storia, basata sul principio di separazione dei poteri (esecutivo, legislativo, giudiziario) teorizzato dall'Illuminismo.</p>
-                            <img class="archive-image mt-4" src="Assassin's Creed 3.jpg" alt="Assassin's Creed 3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer><span>ARCHIVIO RIVOLUZIONI © 2026</span><span>Studiare il passato. Leggere il presente.</span><a href="#top">↑ Torna su</a></footer>
+    <div class="modal" id="modalInglese" role="dialog" aria-modal="true" aria-labelledby="titleInglese" hidden><div class="modal-panel"><button class="modal-close" aria-label="Chiudi">×</button><p class="eyebrow">Memoria 01 · 1642 — 1689</p><h2 id="titleInglese">La Rivoluzione<br><em>Inglese</em></h2><p>La Rivoluzione Inglese fu un lungo conflitto politico, religioso e militare che trasformò il rapporto tra la monarchia e il Parlamento. È collegata alle guerre dei Tre Regni, che coinvolsero Inghilterra, Scozia e Irlanda.</p><h4>Perché iniziò</h4><ul><li><strong>Potere e tasse:</strong> Carlo I Stuart sosteneva il diritto divino del re e cercava di governare senza il Parlamento, imponendo anche nuove tasse come la <em>ship money</em>.</li><li><strong>Religione:</strong> puritani e protestanti rifiutavano il rafforzamento della Chiesa anglicana e temevano un avvicinamento al cattolicesimo.</li><li><strong>Crisi politica:</strong> nel 1628 la <em>Petition of Right</em> difese i sudditi dagli arresti arbitrari e dalle tasse non approvate dal Parlamento.</li></ul><h4>Le fasi del conflitto</h4><ul><li><strong>Prima guerra civile (1642 — 1646):</strong> Realisti, o Cavaliers, contro Parlamentaristi, o Roundheads. La vittoria parlamentare fu decisiva nella battaglia di Naseby del 1645.</li><li><strong>Regicidio e Commonwealth (1648 — 1649):</strong> Carlo I fu processato e giustiziato il 30 gennaio 1649. Nacque una repubblica guidata dal Parlamento.</li><li><strong>Il potere di Cromwell (1653 — 1658):</strong> Oliver Cromwell divenne Lord Protettore e impose un governo fortemente sostenuto dall'esercito del New Model Army.</li><li><strong>Restaurazione (1660):</strong> dopo la morte di Cromwell, Carlo II tornò dall'esilio e la monarchia fu restaurata.</li></ul><h4>La Gloriosa Rivoluzione</h4><p>Nel 1688 il Parlamento depose Giacomo II e offrì la corona a Guglielmo III d'Orange e Maria II. Il <em>Bill of Rights</em> del 1689 stabilì che il sovrano non poteva governare senza il consenso del Parlamento.</p><h4>Un nuovo equilibrio</h4><p>La rivoluzione non creò subito una democrazia moderna, ma limitò il potere assoluto della Corona e pose le basi della monarchia costituzionale e della sovranità parlamentare. Da quel momento un monarca inglese non avrebbe più potuto governare ignorando il Parlamento.</p><p class="source-note">Fonte di riferimento: <a href="https://it.wikipedia.org/wiki/Guerra_civile_inglese" target="_blank" rel="noopener noreferrer">Wikipedia — Guerra civile inglese</a></p></div></div>
+    <div class="modal" id="modalAmericana" role="dialog" aria-modal="true" aria-labelledby="titleAmericana" hidden><div class="modal-panel"><button class="modal-close" aria-label="Chiudi">×</button><p class="eyebrow">Memoria 02 · 1765 — 1783</p><h2 id="titleAmericana">La Rivoluzione<br><em>Americana</em></h2><p>La Rivoluzione Americana nacque dalla ribellione delle Tredici Colonie contro il governo britannico e portò alla nascita degli Stati Uniti d'America.</p><h4>Le cause della ribellione</h4><ul><li><strong>No taxation without representation:</strong> i coloni rifiutavano di pagare tasse approvate da un Parlamento nel quale non avevano rappresentanti.</li><li><strong>Stamp Act e Townshend Acts:</strong> le nuove imposte del 1765 e del 1767 alimentarono proteste e boicottaggi.</li><li><strong>Boston Tea Party:</strong> nel dicembre 1773 i coloni gettarono in mare un carico di tè per protestare contro il Tea Act.</li></ul><h4>Dalla protesta alla guerra</h4><ul><li><strong>Lexington e Concord (1775):</strong> lo scontro tra soldati britannici e milizie coloniali fece iniziare la guerra d'indipendenza.</li><li><strong>Dichiarazione d'indipendenza:</strong> il Congresso la approvò il 4 luglio 1776. Thomas Jefferson ne fu il principale autore.</li><li><strong>Alleanza con la Francia:</strong> dopo la vittoria americana a Saratoga nel 1777, la Francia sostenne militarmente i coloni.</li><li><strong>Yorktown (1781):</strong> l'esercito di George Washington e le forze francesi costrinsero alla resa l'esercito britannico.</li></ul><h4>La nascita degli Stati Uniti</h4><p>Il Trattato di Parigi del 1783 riconobbe l'indipendenza delle ex colonie. Nel 1787 la Costituzione istituì una repubblica federale con presidente, Congresso bicamerale e separazione dei poteri.</p><h4>Un'idea destinata a cambiare il mondo</h4><p>Le idee di diritti naturali, consenso dei governati e libertà politica si diffusero in Europa e influenzarono le rivoluzioni successive. Tuttavia, la nuova repubblica mantenne a lungo la schiavitù e escluse donne, nativi e gran parte della popolazione non bianca dalla piena cittadinanza.</p><p class="source-note">Fonte di riferimento: <a href="https://it.wikipedia.org/wiki/Rivoluzione_americana" target="_blank" rel="noopener noreferrer">Wikipedia — Rivoluzione americana</a></p></div></div>
+    <div class="modal" id="modalIndustriale" role="dialog" aria-modal="true" aria-labelledby="titleIndustriale" hidden><div class="modal-panel"><button class="modal-close" aria-label="Chiudi">×</button><p class="eyebrow">Memoria 03 · 1760 — 1840</p><h2 id="titleIndustriale">Prima Rivoluzione<br><em>Industriale</em></h2><p>La Prima Rivoluzione Industriale fu il passaggio da un'economia agricolo-artigianale a un sistema fondato sulle macchine, sulle fabbriche e su nuove fonti di energia. Iniziò in Gran Bretagna nella seconda metà del Settecento.</p><h4>Perché iniziò in Gran Bretagna</h4><ul><li><strong>Risorse naturali:</strong> carbone e ferro erano disponibili in grandi quantità e potevano essere trasportati attraverso canali e porti.</li><li><strong>Rivoluzione agricola:</strong> le enclosures e le nuove tecniche aumentarono la produttività e spinsero parte della manodopera verso le città.</li><li><strong>Commerci e capitali:</strong> la crescita della popolazione, dei consumi e dei commerci coloniali favorì gli investimenti in macchinari.</li></ul><h4>Le innovazioni decisive</h4><ul><li><strong>Industria tessile:</strong> la spoletta volante, la Spinning Jenny e il telaio meccanico resero la filatura e la tessitura molto più rapide.</li><li><strong>Macchina a vapore:</strong> perfezionata da James Watt, fornì energia costante alle fabbriche, alle miniere e ai trasporti.</li><li><strong>Ferro e carbone:</strong> il coke, la siderurgia e nuovi procedimenti di lavorazione permisero di produrre più ferro e acciaio.</li><li><strong>Trasporti:</strong> canali, ferrovie e locomotive, come la Rocket di George Stephenson, ridussero tempi e costi degli spostamenti.</li></ul><h4>La società industriale</h4><p>Il lavoro si concentrò nelle fabbriche, organizzato dalla divisione dei compiti e regolato da orari rigidi. Nacquero la borghesia industriale e una vasta classe operaia, spesso sottoposta a salari bassi, turni lunghi e condizioni pericolose.</p><h4>Città e conseguenze</h4><p>L'urbanizzazione trasformò città come Manchester, Birmingham e Leeds. I quartieri operai crebbero rapidamente, spesso senza fognature né acqua corrente. Il disagio alimentò il luddismo, le prime Trade Unions e nuove riflessioni sociali e politiche.</p><h4>Una trasformazione irreversibile</h4><p>La rivoluzione industriale aumentò la produzione e nel lungo periodo contribuì alla crescita dei consumi, dell'alfabetizzazione e dell'aspettativa di vita. Allo stesso tempo modificò profondamente l'ambiente, i rapporti tra le classi e il modo di vivere nelle città.</p><p class="source-note">Fonte di riferimento: <a href="https://it.wikipedia.org/wiki/Rivoluzione_industriale" target="_blank" rel="noopener noreferrer">Wikipedia — Rivoluzione industriale</a></p></div></div>
     <script src="script.js"></script>
 </body>
-</html>
+</html>        
