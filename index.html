@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Archivio storico interattivo: le tre grandi rivoluzioni che hanno forgiato il mondo contemporaneo.">
     <title>Le Tre Rivoluzioni — Archivio Storico & Memorie</title>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,6..72,400;0,6..72,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Filigrana e texture carta -->
     <div class="archive-grain" aria-hidden="true"></div>
     <div class="ambient-glow" aria-hidden="true"></div>
 
-    <!-- Header di Navigazione Archivio -->
     <header class="site-header">
         <a class="brand" href="#top" aria-label="Torna alla copertina">
             <span class="brand-seal">N° 03</span>
@@ -35,16 +30,11 @@
         </div>
 
         <div class="header-actions">
-            <button id="soundToggle" class="sound-toggle" aria-label="Attiva/disattiva effetti sonori dell'archivio" title="Effetti sonori sfoglio">
-                <span class="sound-icon">🔈</span>
-                <span class="sound-label">Audio FX</span>
-            </button>
             <a class="jump-btn" href="#mappa">Esplora Fascicoli <span>↓</span></a>
         </div>
     </header>
 
     <main id="top">
-        <!-- Hero Section: Copertina Editoriale -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <div class="classified-stamp">FONDO STORICO · ATTO I, II, III</div>
@@ -55,7 +45,7 @@
                     della Storia.
                 </h1>
                 <p class="hero-lead">
-                    Tra il fumo delle prime fabbriche tessili, il sangue versato sui pavimenti di Westminster e il grido di libertà oltre l’Atlantico. Tre scosse sismiche hanno sepolto l'antico regime per inaugurare la modernità.
+                    Tra il fumo delle prime fabbriche tessili, il sangue versato sui pavimenti di Westminster e il grido di libertà oltre l’Atlantico. Tre scosse sismiche hanno sepolto l'antico ordine e dato vita al mondo moderno.
                 </p>
                 <div class="hero-cta-group">
                     <a class="primary-pill" href="#mappa">
@@ -69,17 +59,16 @@
                 </div>
             </div>
 
-            <!-- Immagine di Copertina con Griglia Archeologica -->
             <div class="hero-visual">
                 <div class="visual-frame">
                     <div class="crosshair top-left">+</div>
                     <div class="crosshair top-right">+</div>
                     <div class="crosshair bottom-left">+</div>
                     <div class="crosshair bottom-right">+</div>
-                    
+
                     <img src="Assassin's Creed.jpg" alt="Dipinto d'epoca che ritrae il fermento rivoluzionario" class="hero-img">
                     <div class="visual-overlay"></div>
-                    
+
                     <div class="visual-tagline">
                         <span class="tag-meta">FIG. 00 · EPIGRAFE GENERALE</span>
                         <p class="tag-quote">«Quando il vecchio ordine rifiuta di piegarsi, la storia lo spezza.»</p>
@@ -88,7 +77,6 @@
             </div>
         </section>
 
-        <!-- Indicatore Statistico e Sinossi Cronologica -->
         <section class="stats-ribbon" aria-label="Parametri dell'archivio">
             <div class="stat-cell">
                 <span class="stat-number">03</span>
@@ -116,7 +104,6 @@
             </div>
         </section>
 
-        <!-- Sezione Cronologia e Fascicoli -->
         <section class="dossier-section" id="mappa" aria-labelledby="dossier-title">
             <div class="section-topbar">
                 <div class="section-heading">
@@ -124,7 +111,6 @@
                     <h2 id="dossier-title">Fascicoli <em>declassificati</em></h2>
                 </div>
 
-                <!-- Filtri Periodo con badge contatore dinamico -->
                 <div class="filter-wrapper">
                     <div class="filters" role="group" aria-label="Filtra per secolo">
                         <button class="filter active" data-filter="all">
@@ -140,14 +126,10 @@
                 </div>
             </div>
 
-            <!-- Griglia dei Dossier -->
             <div class="dossier-grid" id="timeline">
-                
-                <!-- CARD 1: RIVOLUZIONE INGLESE -->
                 <article class="dossier-card" data-period="1600" data-index="1">
                     <div class="card-stamp">MEMORIA 01</div>
                     <div class="card-header-bar">
-                        <span class="card-coords">LON · 51.5074° N, 0.1278° W</span>
                         <span class="card-era">1642 — 1689</span>
                     </div>
 
@@ -183,11 +165,9 @@
                     </div>
                 </article>
 
-                <!-- CARD 2: RIVOLUZIONE AMERICANA -->
                 <article class="dossier-card" data-period="1700" data-index="2">
                     <div class="card-stamp">MEMORIA 02</div>
                     <div class="card-header-bar">
-                        <span class="card-coords">PHL · 39.9526° N, 75.1652° W</span>
                         <span class="card-era">1765 — 1783</span>
                     </div>
 
@@ -223,11 +203,9 @@
                     </div>
                 </article>
 
-                <!-- CARD 3: RIVOLUZIONE INDUSTRIALE -->
                 <article class="dossier-card" data-period="1700" data-index="3">
                     <div class="card-stamp">MEMORIA 03</div>
                     <div class="card-header-bar">
-                        <span class="card-coords">MAN · 53.4808° N, 2.2426° W</span>
                         <span class="card-era">1760 — 1840</span>
                     </div>
 
@@ -262,12 +240,10 @@
                         </button>
                     </div>
                 </article>
-
             </div>
             <p class="empty-state" hidden>Nessun fascicolo trovato per questa classificazione temporale.</p>
         </section>
 
-        <!-- Tavola Comparativa: Le Tre Forze a Confronto -->
         <section class="comparison-section">
             <div class="comparison-header">
                 <span class="section-tag">QUADRO SINOTTICO</span>
@@ -298,7 +274,6 @@
         </section>
     </main>
 
-    <!-- Footer Elegante -->
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
@@ -321,15 +296,13 @@
         </div>
     </footer>
 
-    <!-- MODALE 1: RIVOLUZIONE INGLESE -->
     <div class="modal" id="modalInglese" role="dialog" aria-modal="true" aria-labelledby="titleInglese" hidden>
         <div class="modal-backdrop"></div>
         <div class="modal-panel">
             <button class="modal-close" aria-label="Chiudi il fascicolo">✕ ESC</button>
-            
+
             <div class="modal-dossier-header">
                 <span class="modal-stamp">DOCUMENTO UFFICIALE // CLASSE I</span>
-                <span class="modal-read-time">Tempo di lettura: 3 min</span>
             </div>
 
             <p class="modal-eyebrow">Dossier N° 01 · 1642 — 1689 · Londra</p>
@@ -340,15 +313,15 @@
 
             <div class="modal-body">
                 <div class="dossier-intro">
-                    <p>La Rivoluzione Inglese rappresenta la prima volta nella storia europea in cui una nazione processa e giustizia legalmente il proprio sovrano per tradimento contro il suo stesso popolo. Non fu un mero colpo di mano militare, ma il parto cruento della <strong>sovranità parlamentare</strong>.</p>
+                    <p>La Rivoluzione Inglese rappresenta la prima volta nella storia europea in cui una nazione processa e giustizia legalmente il proprio sovrano per tradimento contro il suo stesso popolo.</p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>1. I semi dello scontro: Corona vs Parlamento</h3>
                     <ul>
-                        <li><strong>Diritto divino e tirannide fiscale:</strong> Carlo I Stuart riteneva il potere monarchico conferito direttamente da Dio. Dal 1629 sciolse il Parlamento per 11 anni e impose tasse d'emergenza senza voto, prima fra tutte la famigerata <em>Ship Money</em>.</li>
-                        <li><strong>La frattura religiosa:</strong> I puritani calvinisti rifiutavano le gerarchie anglicane e il cerimoniale quasi cattolico imposto dall'arcivescovo Laud, vedendovi un ritorno all'oscurantismo.</li>
-                        <li><strong>La Petition of Right (1628):</strong> Il Parlamento proclamò che nessun uomo libero poteva essere arrestato arbitrariamente né tassato senza consenso parlamentare (radici dell'<em>Habeas Corpus</em>).</li>
+                        <li><strong>Diritto divino e tirannide fiscale:</strong> Carlo I Stuart riteneva il potere monarchico conferito direttamente da Dio. Dal 1629 sciolse il Parlamento per 11 anni, imponendo tasse senza consenso.</li>
+                        <li><strong>La frattura religiosa:</strong> I puritani calvinisti rifiutavano le gerarchie anglicane e il cerimoniale quasi cattolico imposto dall'arcivescovo Laud.</li>
+                        <li><strong>La Petition of Right (1628):</strong> Il Parlamento proclamò che nessun uomo libero poteva essere arrestato arbitrariamente né tassato senza consenso parlamentare.</li>
                     </ul>
                 </div>
 
@@ -362,45 +335,43 @@
                 <div class="dossier-section-block">
                     <h3>2. La Guerra Civile e il New Model Army</h3>
                     <p>
-                        Lo scontro armato (1642–1646) vide fronteggiarsi i <strong>Cavaliers</strong> (realisti, aristocrazia terriera fedele al re) e i <strong>Roundheads</strong> (parlamentaristi, borghesia cittadina e puritani).
+                        Lo scontro armato (1642–1646) vide fronteggiarsi i <strong>Cavaliers</strong> (realisti, aristocrazia terriera fedele al re) e i <strong>Roundheads</strong> (parlamentari, mercanti, puritani e membri delle classi medie urbane).
                     </p>
                     <p>
-                        La svolta bellica fu guidata da <strong>Oliver Cromwell</strong>, che creò il <em>New Model Army</em>: un esercito di volontari meritocratico, fortemente motivato da fede religiosa e rigore morale, che sbaragliò l'esercito regio nella battaglia di Naseby (1645).
+                        La svolta bellica fu guidata da <strong>Oliver Cromwell</strong>, che creò il <em>New Model Army</em>: un esercito di volontari meritocratico, fortemente motivato da fede religiosa e senso di missione civile.
                     </p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>3. Il Regicidio e il Protettorato (1649 — 1658)</h3>
                     <p>
-                        Il <strong>30 gennaio 1649</strong>, Carlo I fu decapitato a Whitehall davanti a una folla sbigottita: cadde il dogma dell'intoccabilità del re. Venne proclamato il <em>Commonwealth</em> (la Repubblica). Tuttavia, Cromwell accentrò presto tutti i poteri diventando Lord Protettore in una severa dittatura personale. Alla sua morte nel 1658, la repubblica non resse e nel 1660 fu richiamata la monarchia con Carlo II.
+                        Il <strong>30 gennaio 1649</strong>, Carlo I fu decapitato a Whitehall davanti a una folla sbigottita: cadde il dogma dell'intoccabilità del re. Venne proclamato il <em>Commonwealth of England</em>.
                     </p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>4. La Gloriosa Rivoluzione & il Bill of Rights (1688 — 1689)</h3>
                     <p>
-                        Quando Giacomo II tentò di restaurare il cattolicesimo e l'assolutismo, il Parlamento compì una mossa geniale senza spargimento di sangue: depose il re e offrì la corona allo statolder olandese <strong>Guglielmo d'Orange</strong>, a patto che firmasse la <strong>Dichiarazione dei Diritti (Bill of Rights, 1689)</strong>.
+                        Quando Giacomo II tentò di restaurare il cattolicesimo e l'assolutismo, il Parlamento compì una mossa geniale senza spargimento di sangue: depose il re e offrì la corona a Guglielmo d'Orange e Maria Stuart.
                     </p>
                     <div class="key-takeaways">
                         <strong>L'eredità duratura:</strong>
-                        <p>Da quel giorno in Inghilterra vige il principio fondamentale <em>«Il Re regna ma non governa»</em>. Nessuna legge, tassa o esercito può esistere senza l'approvazione del Parlamento. Era nata la prima monarchia parlamentare del pianeta.</p>
+                        <p>Da quel giorno in Inghilterra vige il principio fondamentale <em>«Il Re regna ma non governa»</em>. Nessuna legge, tassa o esercito può esistere senza l'approvazione del Parlamento.</p>
                     </div>
                 </div>
 
-                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Guerra_civile_inglese" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Guerra Civile Inglese ↗</a></p>
+                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Guerra_civile_inglese" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Guerra Civile Inglese</a></p>
             </div>
         </div>
     </div>
 
-    <!-- MODALE 2: RIVOLUZIONE AMERICANA -->
     <div class="modal" id="modalAmericana" role="dialog" aria-modal="true" aria-labelledby="titleAmericana" hidden>
         <div class="modal-backdrop"></div>
         <div class="modal-panel">
             <button class="modal-close" aria-label="Chiudi il fascicolo">✕ ESC</button>
-            
+
             <div class="modal-dossier-header">
                 <span class="modal-stamp">DOCUMENTO UFFICIALE // CLASSE II</span>
-                <span class="modal-read-time">Tempo di lettura: 3 min</span>
             </div>
 
             <p class="modal-eyebrow">Dossier N° 02 · 1765 — 1783 · Filadelfia</p>
@@ -411,15 +382,15 @@
 
             <div class="modal-body">
                 <div class="dossier-intro">
-                    <p>Nelle Tredici Colonie britanniche del Nord America, una controversia commerciale e doganale si tramutò nel più rivoluzionario esperimento politico dell'era moderna: l'applicazione pratica delle dottrine di Locke, Montesquieu e Rousseau sulla sovranità del popolo.</p>
+                    <p>Nelle Tredici Colonie britanniche del Nord America, una controversia commerciale e doganale si tramutò nel più rivoluzionario esperimento politico dell'era moderna: l'atto di nascita della democrazia repubblicana moderna.</p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>1. Il fattore detonante: «No Taxation Without Representation»</h3>
                     <ul>
-                        <li><strong>Il debito imperiale:</strong> Dopo aver vinto la Guerra dei Sette Anni (1756–1763), la Gran Bretagna decise di far pagare ai coloni americani le spese militari per difendere la frontiera.</li>
-                        <li><strong>Stamp Act e Sugar Act:</strong> Tasse imposte da Londra su giornali, atti notarili e commercio coloniale. I coloni protestarono: il Parlamento di Westminster non poteva imporre tributi senza che vi sedessero rappresentanti americani eletti.</li>
-                        <li><strong>Boston Tea Party (1773):</strong> Travestiti da nativi Mohawk, i patrioti rovesciarono in mare 342 casse di tè nel porto di Boston per sabotare il monopolio britannico. Londra rispose revocando l'autogoverno del Massachusetts.</li>
+                        <li><strong>Il debito imperiale:</strong> Dopo aver vinto la Guerra dei Sette Anni (1756–1763), la Gran Bretagna decise di far pagare ai coloni americani le spese militari.</li>
+                        <li><strong>Stamp Act e Sugar Act:</strong> Tasse imposte da Londra su giornali, atti notarili e commercio coloniale. I coloni protestarono: il Parlamento di Westminster non poteva imporre tributi senza rappresentanza.</li>
+                        <li><strong>Boston Tea Party (1773):</strong> Travestiti da nativi Mohawk, i patrioti rovesciarono in mare 342 casse di tè nel porto di Boston per sabotare il monopolio britannico.</li>
                     </ul>
                 </div>
 
@@ -433,17 +404,17 @@
                 <div class="dossier-section-block">
                     <h3>2. La Guerra d'Indipendenza (1775 — 1783)</h3>
                     <p>
-                        I primi spari risuonarono a <strong>Lexington e Concord nel 1775</strong>. Il Secondo Congresso Continentale nominò <strong>George Washington</strong> comandante dell'Esercito Continentale, composto da volontari scarsamente equipaggiati ma profondamente motivati.
+                        I primi spari risuonarono a <strong>Lexington e Concord nel 1775</strong>. Il Secondo Congresso Continentale nominò <strong>George Washington</strong> comandante dell'Esercito Continentale.
                     </p>
                     <p>
-                        La svolta diplomatica avvenne con la vittoria americana a <strong>Saratoga (1777)</strong>: Benjamin Franklin convinse la Francia di Luigi XVI e la Spagna a dichiarare guerra alla Gran Bretagna, fornendo truppe navali e fondi indispensabili. Con l'assedio congiunto di <strong>Yorktown (1781)</strong>, l'esercito imperiale britannico fu costretto alla resa definitiva.
+                        La svolta diplomatica avvenne con la vittoria americana a <strong>Saratoga (1777)</strong>: Benjamin Franklin convinse la Francia e la Spagna a dichiarare guerra alla Gran Bretagna, cambiando il corso del conflitto.
                     </p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>3. La Costituzione degli Stati Uniti (1787)</h3>
                     <p>
-                        Con il Trattato di Parigi del 1783, Londra riconobbe l'indipendenza. A Filadelfia nel 1787 i Padri Fondatori redassero la <strong>Costituzione federale</strong>: una divisione magistrale e perpetua dei poteri:
+                        Con il Trattato di Parigi del 1783, Londra riconobbe l'indipendenza. A Filadelfia nel 1787 i Padri Fondatori redassero la <strong>Costituzione federale</strong>: una divisione dei poteri moderna, con controllo reciproco tra Esecutivo, Legislativo e Giudiziario.
                     </p>
                     <ul>
                         <li><strong>Esecutivo:</strong> Presidente federale eletto, a tempo determinato.</li>
@@ -452,24 +423,22 @@
                     </ul>
                     <div class="key-takeaways">
                         <strong>Le ombre e le luci:</strong>
-                        <p>La Rivoluzione accese una scintilla globale che portò dritta alla Rivoluzione Francese del 1789. Tuttavia, il documento originale lasciò intatta l'istituzione disumana della schiavitù nel Sud ed escluse nativi e donne dai diritti civili, aprendo ferite che gli Stati Uniti avrebbero affrontato nei secoli successivi.</p>
+                        <p>La Rivoluzione accese una scintilla globale che portò dritta alla Rivoluzione Francese del 1789. Tuttavia, il documento originale lasciò intatta l'istituzione della schiavitù in molti Stati del Sud.</p>
                     </div>
                 </div>
 
-                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Rivoluzione_americana" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Rivoluzione Americana ↗</a></p>
+                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Rivoluzione_americana" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Rivoluzione Americana</a></p>
             </div>
         </div>
     </div>
 
-    <!-- MODALE 3: RIVOLUZIONE INDUSTRIALE -->
     <div class="modal" id="modalIndustriale" role="dialog" aria-modal="true" aria-labelledby="titleIndustriale" hidden>
         <div class="modal-backdrop"></div>
         <div class="modal-panel">
             <button class="modal-close" aria-label="Chiudi il fascicolo">✕ ESC</button>
-            
+
             <div class="modal-dossier-header">
                 <span class="modal-stamp">DOCUMENTO UFFICIALE // CLASSE III</span>
-                <span class="modal-read-time">Tempo di lettura: 3 min</span>
             </div>
 
             <p class="modal-eyebrow">Dossier N° 03 · 1760 — 1840 · Manchester / Birmingham</p>
@@ -480,15 +449,15 @@
 
             <div class="modal-body">
                 <div class="dossier-intro">
-                    <p>Se le rivoluzioni inglese e americana cambiarono chi comanda, la Rivoluzione Industriale cambiò <strong>il modo in cui la specie umana vive, lavora, consuma e percepisce il tempo</strong>. Per la prima volta nella storia, l'umanità ruppe il limite delle calorie prodotte da muscoli animali e biomasse.</p>
+                    <p>Se le rivoluzioni inglese e americana cambiarono chi comanda, la Rivoluzione Industriale cambiò <strong>il modo in cui la specie umana vive, lavora, consuma e percepisce il tempo</strong>.</p>
                 </div>
 
                 <div class="dossier-section-block">
                     <h3>1. Perché l'Inghilterra? I prerequisiti unici</h3>
                     <ul>
-                        <li><strong>La Rivoluzione Agraria:</strong> Con le recinzioni dei campi aperti (<em>Enclosures</em>), l'agricoltura diventò un business capitalistico. Milioni di contadini espropriati si riversarono nelle città come forza lavoro a basso costo.</li>
-                        <li><strong>Carbone e Ferro vicini e abbondanti:</strong> Il sottosuolo britannico era colmo di bacini carboniferi facilmente accessibili e canali navigabili che univano miniere e porti.</li>
-                        <li><strong>Impero globale e capitali:</strong> I profitti del commercio coloniale mondiale e la presenza della Banca d'Inghilterra resero il credito a basso interesse disponibile per investire in fabbriche.</li>
+                        <li><strong>La Rivoluzione Agraria:</strong> Con le recinzioni dei campi aperti (<em>Enclosures</em>), l'agricoltura diventò un business capitalistico. Milioni di contadini furono spinti verso le città.</li>
+                        <li><strong>Carbone e Ferro vicini e abbondanti:</strong> Il sottosuolo britannico era colmo di bacini carboniferi facilmente accessibili e canali navigabili che univano mercati e porti.</li>
+                        <li><strong>Impero globale e capitali:</strong> I profitti del commercio coloniale mondiale e la presenza della Banca d'Inghilterra resero il credito a basso interesse davvero disponibile.</li>
                     </ul>
                 </div>
 
@@ -505,9 +474,9 @@
                         Tre grandi innovazioni a catena hanno innescato la mutazione:
                     </p>
                     <ul>
-                        <li><strong>Il settore tessile:</strong> La <em>Spinning Jenny</em> (1764) e il telaio meccanico di Cartwright permisero a un solo operaio di produrre la quantità di filato prima realizzata da decine di artigiani.</li>
-                        <li><strong>La macchina a vapore di James Watt (1769):</strong> Convertendo la combustione del carbone in energia meccanica continua, slegò le fabbriche dalla vicinanza obbligata ai fiumi. Le fabbriche poterono sorgere ovunque, soprattutto nelle città.</li>
-                        <li><strong>La Ferrovia (1825–1830):</strong> La locomotiva <em>Rocket</em> di George Stephenson tra Manchester e Liverpool inaugurò l'era della velocità: passeggeri e tonnellate di carbone attraversavano il paese in poche ore.</li>
+                        <li><strong>Il settore tessile:</strong> La <em>Spinning Jenny</em> (1764) e il telaio meccanico di Cartwright permisero a un solo operaio di produrre la quantità di filo che prima richiedeva decine di artefici.</li>
+                        <li><strong>La macchina a vapore di James Watt (1769):</strong> Convertendo la combustione del carbone in energia meccanica continua, slegò le fabbriche dalla vicinanza alle vie d'acqua.</li>
+                        <li><strong>La Ferrovia (1825–1830):</strong> La locomotiva <em>Rocket</em> di George Stephenson tra Manchester e Liverpool inaugurò l'era della velocità: passeggeri e merci iniziarono a viaggiare in modo continuo.</li>
                     </ul>
                 </div>
 
@@ -517,15 +486,15 @@
                         Città come Manchester esplosero demograficamente in pochi decenni, senza pianificazione, fognature né luce: nacquero i <em>slums</em> operai.
                     </p>
                     <p>
-                        Gli operai, compresi donne e bambini di sette anni, lavoravano <strong>14-16 ore al giorno</strong> in ambienti insalubri sotto sorveglianza militare. La frustrazione sfociò prima nel <strong>Luddismo</strong> (la distruzione clandestina delle macchine accusate di rubare il lavoro) e successivamente nelle prime <strong>Trade Unions</strong> (sindacati) e nel cartismo per il suffragio universale.
+                        Gli operai, compresi donne e bambini di sette anni, lavoravano <strong>14–16 ore al giorno</strong> in ambienti insalubri sotto sorveglianza militare. La frustrazione sociale crebbe di pari passo con la produzione.
                     </p>
                     <div class="key-takeaways">
                         <strong>L'alba dell'Antropocene:</strong>
-                        <p>La Rivoluzione Industriale ha gettato le basi del benessere tecnologico moderno, ma ha anche dato il via alle prime massicce emissioni di CO₂ e a una profonda diseguaglianza sociale, aprendo il dibattito filosofico ed economico di Marx, Smith e Ricardo tuttora vivo oggi.</p>
+                        <p>La Rivoluzione Industriale ha gettato le basi del benessere tecnologico moderno, ma ha anche dato il via alle prime massicce emissioni di CO₂ e a profonde diseguaglianze sociali ancora oggi riscontrabili.</p>
                     </div>
                 </div>
 
-                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Rivoluzione_industriale" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Rivoluzione Industriale ↗</a></p>
+                <p class="source-ref">Archivio consultazione: <a href="https://it.wikipedia.org/wiki/Rivoluzione_industriale" target="_blank" rel="noopener noreferrer">Fascicolo Wikipedia · Rivoluzione Industriale</a></p>
             </div>
         </div>
     </div>
