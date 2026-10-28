@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cards.forEach(card => {
             const matches = activeFilter === 'all' || card.dataset.period === activeFilter;
-
+            
             if (matches) {
                 card.hidden = false;
                 card.style.opacity = '1';
@@ -31,68 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     filters.forEach(button => {
         button.addEventListener('click', () => {
             activeFilter = button.dataset.filter;
-
             filters.forEach(btn => btn.classList.toggle('active', btn === button));
             updateCardVisibility();
         });
     });
 
     const openModal = (modalId) => {
-        const modal = document.getElementById(modalId);
-        if (!modal) return;
-
-        modal.hidden = false;
-        document.body.style.overflow = 'hidden';
-
-        const closeBtn = modal.querySelector('.modal-close');
-        if (closeBtn) closeBtn.focus();
-    };
-
-    const closeModal = (modal) => {
-        if (!modal || modal.hidden) return;
-        modal.hidden = true;
-        document.body.style.overflow = '';
-    };
-
-    document.querySelectorAll('[data-modal]').forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            openModal(button.dataset.modal);
-        });
-    });
-
-    modals.forEach(modal => {
-        const closeBtn = modal.querySelector('.modal-close');
-        const backdrop = modal.querySelector('.modal-backdrop');
-
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => closeModal(modal));
-        }
-
-        if (backdrop) {
-            backdrop.addEventListener('click', () => closeModal(modal));
-        }
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal(modal);
-        });
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            const openedModal = document.querySelector('.modal:not([hidden])');
-            if (openedModal) closeModal(openedModal);
-        }
-
-        const isInputFocused = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
-        const hasOpenModal = document.querySelector('.modal:not([hidden])');
-
-        if (!isInputFocused && !hasOpenModal) {
-            if (e.key === '1') openModal('modalInglese');
-            if (e.key === '2') openModal('modalAmericana');
-            if (e.key === '3') openModal('modalIndustriale');
-        }
-    });
-
-    updateCardVisibility();
-});
